@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Quantum Speed Dial",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "description": "Speed dial to Quantum firefox. Use Alt+1 to Alt+9 Keys to open defined webpages on new tab (Alt+Shift+1 for current tab). Please visit about:addons and set your pages before using :)",
 

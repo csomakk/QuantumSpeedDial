@@ -1,4 +1,4 @@
-console.log("Quantum Speed Dial Extension v1.0.0.6");
+console.log("Quantum Speed Dial Extension v1.0.1.7");
 
 browser.commands.onCommand.addListener(function(command) {
   console.log("command:" + command);
@@ -11,8 +11,26 @@ browser.commands.onCommand.addListener(function(command) {
   }
 });
 
+this.restoreOptions();
+
+function restoreOptions() {
+  console.log('restoring options');
+
+  function setCurrentChoice(result) {
+    this.resultDials = result.dials || [,,,,,,,,,,,,,,,,,,];
+  }
+
+  function onError(error) {
+    console.log(`Error: ${error}`);
+  }
+
+  var getting = browser.storage.local.get("dials");
+  getting.then(setCurrentChoice, onError);
+}
+
+
 function getUrlForKey(key) {
-    return "https://index.hu/" + key;
+    return this.resultDials[key];
 }
 
 function speedDial(key, newTab) {
