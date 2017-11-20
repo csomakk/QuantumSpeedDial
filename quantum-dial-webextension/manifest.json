@@ -1,0 +1,127 @@
+{
+
+  "manifest_version": 2,
+  "name": "Quantum Speed Dial",
+  "version": "1.0",
+
+  "description": "Speed dial to Quantum firefox. Use Alt+1 to Alt+9 Keys to open defined webpages on new tab",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "background": {
+    "scripts": ["qsd.js"]
+  },
+
+  "commands": {
+    "load-1": {
+      "suggested_key": {
+        "default": "Alt+Shift+1"
+      },
+      "description": "Load n'th dial"
+    },
+    "load-1-new": {
+      "suggested_key": {
+        "default": "Alt+1"
+      },
+      "description": "Load n'th dial on new tab"
+    },
+    "load-2": {
+      "suggested_key": {
+        "default": "Alt+Shift+2"
+      }
+    },
+    "load-2-new": {
+      "suggested_key": {
+        "default": "Alt+2"
+      }
+    },
+    "load-3": {
+      "suggested_key": {
+        "default": "Alt+Shift+3"
+      }
+    },
+    "load-3-new": {
+      "suggested_key": {
+        "default": "Alt+3"
+      }
+    }
+    ,
+    "load-4": {
+      "suggested_key": {
+        "default": "Alt+Shift+4"
+      }
+    },
+    "load-4-new": {
+      "suggested_key": {
+        "default": "Alt+4"
+      }
+    }
+    ,
+    "load-5": {
+      "suggested_key": {
+        "default": "Alt+Shift+5"
+      }
+    },
+    "load-5-new": {
+      "suggested_key": {
+        "default": "Alt+5"
+      }
+    }
+    ,
+    "load-6": {
+      "suggested_key": {
+        "default": "Alt+Shift+6"
+      }
+    },
+    "load-6-new": {
+      "suggested_key": {
+        "default": "Alt+6"
+      }
+    }
+    ,
+    "load-7": {
+      "suggested_key": {
+        "default": "Alt+Shift+7"
+      }
+    },
+    "load-7-new": {
+      "suggested_key": {
+        "default": "Alt+7"
+      }
+    }
+    ,
+    "load-8": {
+      "suggested_key": {
+        "default": "Alt+Shift+8"
+      }
+    },
+    "load-8-new": {
+      "suggested_key": {
+        "default": "Alt+8"
+      }
+    }
+    ,
+    "load-9": {
+      "suggested_key": {
+        "default": "Alt+Shift+9"
+      }
+    },
+    "load-9-new": {
+      "suggested_key": {
+        "default": "Alt+9"
+      }
+    }
+  }
+
+}
