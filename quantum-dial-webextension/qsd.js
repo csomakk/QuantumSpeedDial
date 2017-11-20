@@ -7,7 +7,7 @@ browser.commands.onCommand.addListener(function(command) {
     if (command.search("-new") > 0) {
       newTab = true;
     }
-    this.speedDial(command.charAt(5), newTab)
+    this.speedDial(command.charAt(5), newTab);
   }
 });
 
@@ -30,7 +30,7 @@ function restoreOptions() {
 
 
 function getUrlForKey(key) {
-    return this.resultDials[key];
+    return this.resultDials[key - 1];
 }
 
 function speedDial(key, newTab) {
